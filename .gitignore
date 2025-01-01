@@ -1,0 +1,11 @@
+# Python
+venv
+__pycache__
+*.pyc
+*.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# CSV files (should only be in /data)
+*.csv
