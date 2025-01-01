@@ -38,6 +38,45 @@
 ## 협업 방식
 
 -   본 저장소는 p-arfum님이 주도적으로 관리합니다.
+
+-   ## recipes_data.json
+
+This file contains the perfume recipes data in JSON format. Each object in the JSON array represents a single perfume recipe.
+
+**Fields:**
+
+*   `recipe_name` (string): The name of the perfume recipe.
+*   `family` (string): The fragrance family of the perfume.
+*   `desc1` - `desc7` (string): Descriptors of the perfume.
+*   `year` (number): The year the perfume was launched.
+*   `perfumer` (string): The perfumer who created the perfume.
+*   `brand` (string): The brand of the perfume.
+*   `ingredients` (array): An array of objects, each representing an ingredient used in the perfume.
+    *   `code` (string): The unique code of the ingredient.
+    *   `concentration` (number): The concentration of the ingredient in the perfume.
+
+**Example:**
+
+```json
+{
+  "recipe_name": "Eternity",
+  "family": "Floral",
+  "desc1": "fresh",
+  "desc2": "clean",
+  "desc3": "floral",
+  "desc4": "elegant",
+  "desc5": "timeless",
+  "desc6": "classic",
+  "desc7": "romantic",
+  "year": 1988,
+  "perfumer": "Sophia Grojsman",
+  "brand": "Calvin Klein",
+  "ingredients": [
+    { "code": "B001", "concentration": 10 },
+    { "code": "R001", "concentration": 5 },
+    { "code": "S001", "concentration": 2 }
+  ]
+}
 -   github-gk는 코드 리뷰, 개선 제안, 질문 답변, 자료 제공 등을 통해 p-arfum님을 지원합니다.
 -   GitHub Issues, Pull Request 댓글, 이메일 등을 통해 적극적으로 소통합니다.
 
