@@ -1,0 +1,5 @@
+pandas
+scikit-learn
+tensorflow
+jupyter
+protobuf==3.20.0
